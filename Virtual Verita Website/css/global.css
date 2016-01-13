@@ -1,0 +1,320 @@
+@import url(http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Orbitron:400,900);
+
+#index_body{
+	
+	background: #000000 url("../images/background/gray_binary_2160x1440.jpg") repeat-y top left fixed;
+	background-size: 100% auto;
+	font-family: "Orbitron";
+	color: #FFFFFF;
+	width: 60em;
+	height: 170em;
+	margin: auto;
+}
+
+#top_header_text{
+	width: 60em;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+	margin: .5em 0em 0em 0em;
+}
+
+#logo{
+	width: 20em;
+	height: 20em;
+	float: left;
+}
+
+#contact_information{
+	width: 18.75em;
+	height: -20em;
+	float: left;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	margin: 6em 0em 0em 1.25em;
+}
+
+.clear_both{
+	clear: both;
+}
+
+.nav_section{
+	width: 20em;
+	height: auto;
+	margin: auto;
+	display: block;
+	float: left;
+}
+
+.nav_section a,
+.nav_section a:link{
+	display: block;
+	height: auto;
+    text-decoration: none;
+	color: #FFFFFF;
+	background: #333333;
+	font-size: 1.5em;
+	width: 13em;
+	height: 3em;
+	border-radius: 2em;
+	text-align: center;
+	line-height: 3em;
+	margin: 0em 0em .5em 0em;
+}
+
+.nav_section a:hover,
+.nav_section a:active{
+	color: #000000;
+	background: #FFFFFF;
+}
+
+#global_h1{
+	color: #FFFFFF;
+	text-align: center;
+	height: 1em;
+	font-size: 4em;
+	clear: both;
+	margin: 1em 0em 1em 0em;
+}
+
+#business_investigations_p1,
+#cyber_attack_p1,
+#index_p1{
+	text-indent: 2em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 1em 0em 1em 0em;
+}
+
+#cyber_attack_img1{
+	float: left;
+	width: 18.75em;
+	height: 12.5em;
+}
+
+#its_complicated_img1{
+	float: left;
+	width: 18.75em;
+	height: 12.5em;
+	margin: 1em 0em 0em 0em;
+}
+
+#index_img1{
+	float: left;
+	width: 18.75em;
+	height: 18.75em;
+}
+
+#business_investigations_img1{
+	float: left;
+	width: 21.25em;
+	height: 14.16em;
+}
+
+#index_p2,
+#its_complicated_p1,
+#its_complicated_p2{
+	float: left;
+	width: 21.25em;
+	padding: 2em 0em 0em 1.875em;
+	text-indent: 1.875em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+#business_investigations_p2{
+	float: left;
+	width: 40em;
+	padding: 2em 0em 0em 0em;
+	text-indent: 1.875em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+#cyber_attack_p2{
+	float: left;
+	width: 40em;
+	padding: 1em 0em 0em 0em;
+	text-indent: 1.875em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+#cyber_attack_p3{
+	float: left;
+	width: 41.875em;
+	padding: 0em 1.875em 1em 0em;
+	font-size: 1.5em;
+	text-indent: 1.875em;
+}
+
+#business_investigations_p3,
+#index_p3{
+	float: left;
+	width: 41.875em;
+	font-size: 1.5em;
+	margin: 1em 0em 0em 0em;
+}
+
+#business_investigations_p3{
+	float: left;
+	width: 41.875em;
+	font-size: 1.5em;
+	margin: 0em 0em 1em 0em;
+}
+
+#its_complicated_p3{
+	float: left;
+	width: 41.875em;
+	padding: 0em 1.875em 0em 1.875em;
+	font-size: 1.5em;
+}
+
+#index_ul1,
+#its_complicated_ul1{
+	float: left;
+	width: 40em;
+	margin: 1em 0em 1.875em 1.875em;
+	padding: 0em 0em 0em 1.875em;
+	font-size: 1.5em;
+}
+
+#business_investigations_ul1{
+	float: left;
+	width: 40em;
+	margin: 1em 0em 1.875em 1em;
+	padding: 0em 0em 0em 1.875em;
+	font-size: 1.5em;
+}
+
+#cyber_attack_ul1{
+	float: left;
+	width: 40em;
+	margin: 1em 0em 1.875em 0em;
+	padding: 0em 0em 0em 1.875em;
+	font-size: 1.5em;
+}
+
+#index_h2{
+	clear: both;
+	width: 60em;
+	font-size: 2em;
+}
+
+#cyber_attack_h2{
+	width: 18.75em;
+	font-size: 2em;
+	float: left;
+	margin: 2em 0em 2em 1.25em;
+}
+
+#business_investigations_h2{
+	width: 18em;
+	font-size: 2em;
+	float: left;
+	margin: 2em 0em 3em 1.25em;
+}
+
+#index_ul2{
+	float: left;
+	width: 20em;
+	font-size: 1.5em;
+}
+
+#index_float_left{
+	float: left;
+	width: 40em;
+	height: 25.875em;
+}
+
+#index_p4{
+	text-decoration: underline;
+	font-size: 1.5em;
+	float: left;
+	width: 20em;
+}
+
+#cyber_attack_p4{
+	text-decoration: underline;
+	font-size: 1.5em;
+	float: left;
+	width: 40em;
+	margin: 0em 0em 1em 0em;
+}
+
+#index_ul3{
+	float: left;
+	width: 20em;
+	font-size: 1.5em;
+}
+
+#its_complicated_p4{
+	float: left;
+	height: 40em;
+	margin: 0.625em 0em 4.375em 0em;
+}
+
+#index_img2{
+	float: right;
+	width: 23.75em;
+	height: 30.875em;
+	margin: 6em 0em 0em 0em;
+}
+
+#its_complicated_img2{
+	float: left;
+	width: 18.75em;
+	height: 18.75em;
+	margin: -3.125em 0em 0em 0em;
+}
+
+#index_h3{
+	clear: both;
+	width: 40em;
+	font-size: 1.5em;
+	margin: 0em 0em 1em 0em;
+}
+
+a,
+a:link,
+a:visited{
+	color: #FFFFFF;
+}
+
+a:hover,
+a:active{
+	color: #C6C6C6;
+	text-decoration: none;
+}
+
+#underline_text{
+	text-decoration: underline;
+}
+
+.nav_section_footer{
+	width: 20em;
+	height: auto;
+	margin: auto;
+	float: left;
+}
+
+.nav_section_footer a,
+.nav_section_footer a:link{
+	height: auto;
+    text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1.25em;
+	width: 20em;
+	height: 3em;
+	text-align: center;
+	line-height: 3em;
+	margin: 0em 0em .5em 0em;
+}
+
+.nav_section_footer a:hover,
+.nav_section_footer a:active{
+	color: #000000;
+	background: #FFFFFF;
+	width: 20em;
+}
