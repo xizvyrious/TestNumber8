@@ -1,0 +1,328 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+   <title>BF - DMG Calc</title>
+   
+   <style>
+	body
+	{
+		background-color:#6C6C6C url(http://i.imgur.com/RDliBpB.jpg) repeat-y top left fixed;
+		background-size: 100%;
+	}
+	.container
+	{
+		margin:0 auto;
+		border: 1 solid red;
+		border-radius:1.5em;
+	}
+	.outer
+	{
+		float:left;
+		width:24em;
+		height:10em;
+		margin:.5em;
+		background: rgb(150,150,150);
+		background: rgba(150,150,150,.5);
+		border: 1 solid red;
+		border-radius:1.5em;
+	}
+	.outer h4
+	{
+		text-align:center;
+	}
+	.outer input,
+	.outer select,
+	.outer span
+	{
+		margin:0 auto;
+	}
+   </style>
+
+</head>
+
+<body>
+	<p>
+		DMG = ATK * (1 + Sphere + LS1 + LS2 + P + O + aBB + DM) * C * EW * Sparks
+		<br />
+		<br />
+		ATK = Attack Statistic of Unit being calculated (REQUIRED)
+		<br />
+		Sphere = summation of Sphere 1 & Sphere 2 equipped (ATK Bonus Only)
+		<br />
+		LS1 = Your Leader Skill (ATK Bonus Only)
+		<br />
+		LS2 = Friend Leader Skill (ATK Bonus Only)
+		<br />
+		P = Elixir (ATK Bonus Only)
+		<br />
+		O = Ore (ATK Bonus Only)
+		<br />
+		aBB = summation of Attack boost related to Brave Burst for each applicable unit
+		<br />
+		DM = Damage Multiplier given by BB/SBB of Unit being calculated
+		<br />
+		C = summation of Critical Hit Damage modifiers
+		<br />
+		EW = summation of Elemental Weakness modifiers
+		<br />
+		Sparks = Sparks (Omitted for the time being, situational/complex per possible spark)
+		<br />
+	</p>
+
+	<p>
+		* If there are no applicable bonuses, leave field(s) set to 0
+	</p>
+
+	<p>
+		* All values are to be entered as decimal format,
+		<br />
+		convert % to 0.00, ex: 115% = 1.15 or 70% = 0.70
+	</p>
+
+
+	<div class="container">
+		<form action="action_page.php">
+			<div class="outer">
+				<h4>ATK Stat of unit calc. damage output for</h4>
+				
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<input type="text" name="ATK_Stat" value="" placeholder="REQUIRED" size="9" autofocus required>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Sphere 1 (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="Sphere_ATK_1">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.05">5%</option>
+						<option value="0.10">10%</option>
+						<option value="0.15">15%</option>
+						<option value="0.20">20%</option>
+						<option value="0.25">25%</option>
+						<option value="0.30">30%</option>
+						<option value="0.35">35%</option>
+						<option value="0.50">50%</option>
+						<option value="0.75">75%</option>
+						<option value="1.00">100%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Sphere 2 (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="Sphere_ATK_2">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.05">5%</option>
+						<option value="0.10">10%</option>
+						<option value="0.15">15%</option>
+						<option value="0.20">20%</option>
+						<option value="0.25">25%</option>
+						<option value="0.30">30%</option>
+						<option value="0.35">35%</option>
+						<option value="0.50">50%</option>
+						<option value="0.75">75%</option>
+						<option value="1.00">100%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Your Leader Skill (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="LS1">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.20">20%</option>
+						<option value="0.25">25%</option>
+						<option value="0.30">30%</option>
+						<option value="0.50">50%</option>
+						<option value="0.65">65%</option>
+						<option value="0.75">75%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Friend Leader Skill (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="LS2">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.20">20%</option>
+						<option value="0.25">25%</option>
+						<option value="0.30">30%</option>
+						<option value="0.50">50%</option>
+						<option value="0.65">65%</option>
+						<option value="0.75">75%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Elixir (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="Elixir">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.30">30%</option>
+						<option value="0.50">50%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Ore (ATK Bonus Only)</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="Ore">
+						<option value="0.00" selected="selected">0 (none)</option>
+						<option value="0.50">50%</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>ATK boosts given by units 1-6's BB/SBB</h4>
+
+				<div class="inner">
+					&emsp;
+					<span>Unit 1</span><input type="text" name="aBB_1" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 2</span><input type="text" name="aBB_2" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 3</span><input type="text" name="aBB_3" value="0" size="4">
+					<br /><br />
+					&emsp;
+					<span>Unit 4</span><input type="text" name="aBB_4" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 5</span><input type="text" name="aBB_5" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 6</span><input type="text" name="aBB_6" value="0" size="4">
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Damage Multiplier given by BB/SBB of Unit being calculated</h4>
+				
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<input type="text" name="DM" value="0" size="4">
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Critical Hit Damage given by Leader Skills</h4>
+				
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;
+					<span>Leader 1</span><input type="text" name="Crit_LS1" value="0" size="4">
+					&emsp;&emsp;
+					<span>Leader 2</span><input type="text" name="Crit_LS2" value="0" size="4">
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Critical Hit Damage modifier given by units 1-6's BB/SBB</h4>
+
+				<div class="inner">
+					&emsp;
+					<span>Unit 1</span><input type="text" name="Crit_Unit_1" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 2</span><input type="text" name="Crit_Unit_2" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 3</span><input type="text" name="Crit_Unit_3" value="0" size="4">
+					<br />
+					<br />
+					&emsp;
+					<span>Unit 4</span><input type="text" name="Crit_Unit_4" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 5</span><input type="text" name="Crit_Unit_5" value="0" size="4">
+					&emsp;&emsp;
+					<span>Unit 6</span><input type="text" name="Crit_Unit_6" value="0" size="4">
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Critical Hit Damage given by equipped Sphere</h4>
+
+				<div class="inner">
+					&emsp;&emsp;&emsp;&emsp;
+					<span>Sphere 1</span><input type="text" name="Crit_Sphere_1" value="0" size="4">
+					&emsp;&emsp;
+					<span>Sphere 2</span><input type="text" name="Crit_Sphere_2" value="0" size="4">
+				</div>
+			</div>
+				
+			<div class="outer">
+				<h4>Elemental Weakness</h4>
+
+				<div class="inner">
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<select name="EW">
+						<option value="0.50">50% (weak)</option>
+						<option value="1.00" selected="selected">100% (none)</option>
+						<option value="1.50">150% (strong)</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="outer">
+				<div class="inner">
+					<br /><br /><br />
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<input type="submit" value="Calculate!">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
+
+<!--
+<br />
+Spark (Your Leader Skill):<br>
+<input type="text" name="Spark_LS1" value="">
+<br />
+Spark (Friend Leader Skill):<br>
+<input type="text" name="Spark_LS2" value="">
+<br />
+Spark (Unit 1 BB/SBB):<br>
+<input type="text" name="Spark_Unit_1" value="">
+<br />
+Spark (Unit 2 BB/SBB):<br>
+<input type="text" name="Spark_Unit_2" value="">
+<br />
+Spark (Unit 3 BB/SBB):<br>
+<input type="text" name="Spark_Unit_3" value="">
+<br />
+Spark (Unit 4 BB/SBB):<br>
+<input type="text" name="Spark_Unit_4" value="">
+<br />
+Spark (Unit 5 BB/SBB):<br>
+<input type="text" name="Spark_Unit_5" value="">
+<br />
+Spark (Unit 6 BB/SBB):<br>
+<input type="text" name="Spark_Unit_6" value="">
+<br />
+Spark (Sphere 1):<br>
+<input type="text" name="Spark_Sphere_1" value="">
+<br />
+Spark (Sphere 2):<br>
+<input type="text" name="Spark_Sphere_2" value="">-->

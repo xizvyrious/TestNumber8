@@ -1,0 +1,761 @@
+@import url(http://fonts.googleapis.com/css?family=Sofadi+One);
+
+body 
+{ 
+	color: RGB(0,0,0); 
+	font-family: Verdana, Arial, sans-serif, cursive;
+	font-size: 18px;
+	width: 1000px;
+	margin: auto;
+    background: -webkit-linear-gradient(left, RGB(211,175,218), RGB(20,12,40),RGB(20,12,40),RGB(20,12,40), RGB(211,175,218));
+    background: -moz-linear-gradient(right, RGB(211,175,218), RGB(20,12,40),RGB(20,12,40),RGB(20,12,40), RGB(211,175,218));
+    background: -ms-linear-gradient(right, RGB(211,175,218), RGB(20,12,40),RGB(20,12,40),RGB(20,12,40), RGB(211,175,218));
+    background: -o-linear-gradient(right, RGB(211,175,218), RGB(20,12,40),RGB(20,12,40),RGB(20,12,40), RGB(211,175,218));
+    background: linear-gradient(to right, RGB(211,175,218), RGB(20,12,40),RGB(20,12,40),RGB(20,12,40), RGB(211,175,218));
+	background-color: #000;
+}
+
+h1, h2, h3, h4
+{
+	text-shadow: 2px 2px RGB(211,175,218);
+}
+
+.home_table_margin_setter
+{
+	margin-left: 30px;
+}
+
+.home_td_strong_width
+{
+	width: 125px;
+	font-weight: bold;
+}
+
+.home_p_first_letter::first-letter
+{
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 2px 2px RGB(211,175,218);
+}
+
+#header
+{
+    width: 1000px;
+    height: 300px;
+    padding: 0px;
+    margin: auto;
+}
+
+#navbase
+{
+    color: RGB(255,255,255);
+    background-color: RGB(20,12,40);
+    width: 1000px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    border: 0px;
+    padding: 0px;
+    font-family: "Sofadi One", Futura, Arial, sans-serif, cursive;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbase ul 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    height: 40px;
+    width: 600px;
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+}
+
+#navbase li 
+{
+    float: left;
+    padding: 0px 0px 0px 10px;
+}
+
+#navbase li a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    display: block;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: left;
+    text-decoration: none;
+}
+
+#navbase li a:hover 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    text-decoration: none;
+}
+
+#navbase ul li:hover a 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    text-decoration: none;
+}
+
+#navbase li ul 
+{
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 140px;
+    z-index: 200;
+}
+
+#navbase li:hover ul 
+{
+    display: block;
+}
+
+#navbase li li 
+{
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+}
+
+#navbase li:hover li a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    background: none;
+}
+
+#navbase li ul a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    display: block;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px 10px 0px 15px;
+    text-align: left;
+}
+
+#navbase li ul a:hover,
+#navbase li ul li:hover a 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    border: 0px;
+    text-decoration: none;
+    width: 115px;
+}
+
+#gallery_navleft
+{
+    color: RGB(255,255,255);
+    background-color: RGB(20,12,40);
+    width: 200px;
+    height: 900px;
+    margin: auto;
+    border: none;
+    border: 0px;
+    padding: 0px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+	float: left;
+}
+
+#gallery_navleft ul 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    height: 40px;
+    width: 200px;
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+}
+
+#gallery_navleft li 
+{
+    float: left;
+    padding: 0px 0px 0px 10px;
+	margin: auto;
+	width: 200px;
+}
+
+#gallery_navleft li a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    display: block;
+    font-weight: normal;
+    line-height: 75px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: left;
+    text-decoration: none;
+}
+
+#gallery_navleft li a:hover 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    text-decoration: none;
+	width: 150px;
+}
+
+#gallery_navleft ul li:hover a 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    text-decoration: none;
+}
+
+#gallery_navleft li ul 
+{
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 200px;
+    z-index: 200;
+}
+
+#gallery_navleft li:hover ul 
+{
+    display: block;
+}
+
+#gallery_navleft li li 
+{
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+}
+
+#gallery_navleft li:hover li a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    background: none;
+}
+
+#gallery_navleft li ul a 
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    display: block;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+}
+
+#gallery_navleft li ul a:hover,
+#gallery_navleft li ul li:hover a 
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    border: 0px;
+    text-decoration: none;
+    width: 200px;
+}
+
+#content
+{   
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 0px;
+    width: 990px;
+    height: 490px;
+    font-family: Arial;
+    margin: auto;
+}
+
+#gallery_content
+{
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 0px;
+    width: 990px;
+    height: 900px;
+    font-family: Arial;
+    margin: auto;
+}
+
+#gallery_h1
+{
+    width: 400px;
+    margin: 0px 0px 0px 410px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    text-shadow: 2px 2px RGB(211,175,218);
+}
+
+#photo_disp_container
+{
+    height: 520px;
+    width: 780px;
+    float: left;
+}
+
+.photo_disp_button_left
+{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid RGB(20,12,60);
+    border-radius: 20px;
+    color: RGB(20,12,60);
+    background-color: RGB(211,175,218);
+    float: left;
+    margin: 190px 10px 0px 150px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.photo_disp_button_right
+{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid RGB(20,12,60);
+    border-radius: 20px;
+    color: RGB(20,12,60);
+    background-color: RGB(211,175,218);
+    float: left;
+    margin: 190px 0px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#photo_disp_div
+{
+    height: 400px;
+    width: 400px;
+    margin: auto auto 30px auto;
+    border: 5px inset RGB(211,175,218);
+    border-radius: 20px;
+    background: -webkit-linear-gradient(left top, RGB(211,175,218), RGB(20,12,60));
+    background: -moz-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -ms-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -o-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: linear-gradient(to bottom right, RGB(211,175,218), RGB(20,12,60));
+    overflow: hidden;
+    float: left;
+}
+
+#photo_disp_img
+{
+    height: 400px;
+    width: 400px;
+}
+
+#photo_disp_div
+{
+    height: 400px;
+    width: 400px;
+    margin: auto auto 30px auto;
+    border: 5px inset RGB(211,175,218);
+    border-radius: 20px;
+    background: -webkit-linear-gradient(left top, RGB(211,175,218), RGB(20,12,60));
+    background: -moz-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -ms-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -o-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: linear-gradient(to bottom right, RGB(211,175,218), RGB(20,12,60));
+    overflow: hidden;
+    float: left;
+}
+
+#photo_disp_img
+{
+    height: 400px;
+    width: 400px;
+}
+
+#photo_disp_desc
+{
+    width: 400px;
+    margin: auto;
+    font-family: Futura, Arial, sans-serif, cursive;
+    text-shadow: 2px 2px RGB(211,175,218);
+}
+
+#photo_bar_container
+{
+    height: 190px;
+    width: 780px;
+    margin: 0px 0px 0px 215px;
+}
+
+.photo_bar_buttons
+{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid RGB(20,12,60);
+    border-radius: 20px;
+    color: RGB(20,12,60);
+    background-color: RGB(211,175,218);
+    float: left;
+    margin: 55px 5px auto 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#photo_bar_img_1,
+#photo_bar_img_2,
+#photo_bar_img_3,
+#photo_bar_img_4,
+#photo_bar_img_5
+{
+    height: 140px;
+    width: 120px;
+    float: left;
+    margin: auto 3px auto 3px;
+    border: 5px inset RGB(211,175,218);
+    border-radius: 20px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left top, RGB(211,175,218), RGB(20,12,60));
+    background: -moz-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -ms-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -o-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: linear-gradient(to bottom right, RGB(211,175,218), RGB(20,12,60));
+}
+
+#photo_selected_img
+{
+    height: 140px;
+    width: 120px;
+    float: left;
+    margin: auto 3px auto 3px;
+    border: 5px inset RGB(200,200,0);
+    border-radius: 20px;
+    overflow: hidden;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    background: -webkit-linear-gradient(left top, RGB(211,175,218), RGB(20,12,60));
+    background: -moz-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -ms-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: -o-linear-gradient(bottom right, RGB(211,175,218), RGB(20,12,60));
+    background: linear-gradient(to bottom right, RGB(211,175,218), RGB(20,12,60));
+}
+
+#contact_content
+{   
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 0px;
+    width: 990px;
+    height: 1120px;
+    font-family: Arial;
+    margin: auto;
+}
+
+#contact_content_left
+{
+    font-family: Futura, Arial, sans-serif, cursive;
+    width: 560px;
+    float: left;
+    padding: 0px 20px 0px 20px;
+    height: 1080px;
+}
+
+.contact_h2
+{
+    text-shadow: 2px 2px RGB(211,175,218);
+}
+
+.contact_p:first-letter
+{
+    font-weight: bold;
+} 
+
+#contact_ul
+{
+	list-style-type: circle;
+}
+
+#contact_content_right
+{
+    font-family: Futura, Arial, sans-serif, cursive;
+    width: 330px;
+    height: 1060px;
+    float: left;
+    padding: 20px 15px 0px 20px;
+    border-left:3px inset RGB(211,175,218);
+}
+ 
+
+fieldset
+{
+    background-color: RGB(211,175,218);
+}
+
+legend
+{
+    font-weight: bold;
+}
+
+#submit
+{
+    float: right;
+}
+
+.contactinfo
+{
+    width: 301px;
+}
+
+#contactinfo_comments
+{
+    width: 301px;
+    height: 200px;
+} 
+
+#contact_gmap
+{
+    width: 340px;
+    height: 200px;
+    border: 0px;
+}
+
+#fb_joinus
+{
+    width: 110px;
+    float: left;
+    padding: 15px 0px 0px 70px;
+}
+
+#fb_joinus a
+{
+    text-decoration: none;
+}
+
+#fb_joinus a:link
+{
+    text-decoration: none;
+}
+
+#fb_joinus a:hover
+{
+    text-shadow: 1px 1px RGB(211,175,218);
+    text-decoration: none;
+}
+
+#fb_joinus a:active
+{
+    text-shadow: 1px 1px RGB(211,175,218);
+    text-decoration: none;
+}
+
+#fb_joinus a:visited
+{
+    color: RGB(0,0,0);
+}
+
+#fb_logo
+{
+    position: relative;
+    display: block;
+    height: 65px;
+    width: 55px;
+    float: left;
+    padding: 5px 0px 5px 20px;
+    background: -webkit-radial-gradient(50% 15%, farthest-corner, RGB(135,159,211) 10%, RGB(71,99,158) 70%);
+    background: -moz-radial-gradient(50% 15%, farthest-corner, RGB(135,159,211) 10%, RGB(71,99,158) 70%);
+    background: -ms-radial-gradient(50% 15%, farthest-corner, RGB(135,159,211) 10%, RGB(71,99,158) 70%);
+    background: -o-radial-gradient(50% 15%, farthest-corner, RGB(135,159,211) 10%, RGB(71,99,158) 70%);
+    background: radial-gradient(50% 15%, farthest-corner, RGB(135,159,211) 10%, RGB(71,99,158) 70%);
+    color: RGB(255,255,255);
+    text-align: center;
+    line-height: 90px;
+    overflow: hidden;
+    font-size: 100px;
+    font-family: "Verdana", Geneva, sans-serif;
+    border: 3px solid RGB(71,99,158);
+    -webkit-box-shadow: 0px 0px 0px 3px RGB(135,159,211) inset;
+    -moz-box-shadow: 0px 0px 0px 3px RGB(135,159,211) inset;
+    -ms-box-shadow: 0px 0px 0px 3px RGB(135,159,211) inset;
+    -o-box-shadow: 0px 0px 0px 3px RGB(135,159,211) inset;
+    box-shadow: 0px 0px 0px 3px RGB(135,159,211) inset;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#fb_logo a,
+#fb_logo a:link,
+#fb_logo a:hover,
+#fb_logo a:active,
+#fb_logo a:visited
+{
+    color: RGB(255,255,255);
+    display: block;
+}
+
+#footer
+{
+    width: 1000px;
+    height: 50px;
+    color: RGB(255,255,255);
+    background-color: RGB(20,12,40);
+    border: 0px;
+    padding: 0px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+#footer a
+{
+    text-decoration: none;
+}
+
+#footer a:link
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    padding: 2px;
+}
+
+#footer a:visited
+{
+    color: RGB(211,175,218);
+    background-color: RGB(20,12,40);
+    padding: 2px;
+}
+
+#footer a:hover
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    padding: 2px;
+}
+
+#footer a:active
+{
+    color: RGB(20,12,40);
+    background-color: RGB(211,175,218);
+    padding: 2px;
+}
+
+#Home_content
+{
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 10px;
+    width: 970px;
+    height: 960px;
+    font-family: Verdana, Arial;
+    margin: auto;
+}
+
+#Home_left
+{
+    padding: 10px;
+    float: left;
+    width: 570px;
+    padding: 5px 0px 5px 0px;
+    font-family: Futura, Arial, sans-serif, cursive;
+	font-size: 18px;
+}
+
+#Home_right
+{
+    padding: 10px;
+    valign: left;
+    float: right;
+    width: 370px;
+    padding: 5px 0px 5px 10px;
+    font-family: Futura, Arial, sans-serif, cursive;
+	font-size: 18px;
+	border-left:3px inset RGB(211,175,218);
+	height: 955px;
+}
+
+
+#Products_content
+{
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 20px;
+    width: 950px;
+    height: 480px;
+    font-family: Futura, Arial, sans-serif, cursive;
+    margin: auto;
+}
+
+#content_left_side
+{ 
+    float: left; 
+    width: 380px;
+    padding: 10px;
+    font-family: Futura, Arial, sans-serif, cursive;
+}
+
+#content_right_side
+{
+    float: right;
+    width: 400px;
+    padding: 10px;
+    font-family: Futura, Arial, sans-serif, cursive;
+}
+
+#Spirit_content
+{
+    background-color: RGB(255,243,255);
+    border: 5px solid RGB(20,12,60);
+    padding: 10px;
+    width: 970px;
+    height: 1035px;
+    font-family: Futura, Arial, sans-serif, cursive;
+}
+
+#spirit_donate
+{
+	margin-left: 425px;
+}

@@ -1,0 +1,97 @@
+/*
+#nav ul 
+{
+    color: #FFFFFF;
+	width: 1240px;
+    height: 40px;
+    list-style: none;
+    margin: auto;
+	list-style-type: none;
+}
+
+#nav ul li 
+{
+    float: left;
+    padding: 0px 8px 0px 8px;
+	margin: auto;
+}
+
+#nav ul li a 
+{
+    color: #FFFFFF;
+    display: block;
+    font-weight: normal;
+    line-height: 40px;
+    padding: 0px 8px 0px 8px;
+    text-align: left;
+    text-decoration: none;
+	margin: auto;
+}
+
+#nav ul li a:hover 
+{
+    color: #FFFFFF;
+	background: #333333;
+    text-decoration: none;
+}
+
+#nav ul li:hover a 
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#nav ul li ul 
+{
+    display: none;
+    height: auto;
+    position: absolute;
+	width: 200px;
+	list-style-type: none;
+}
+
+#nav ul li:hover ul 
+{
+	color: #FFFFFF;
+    display: block;
+	width: 200px;
+	list-style-type: none;
+}
+
+#nav ul li ul li 
+/*first level drop down container for menu selections*/
+{
+    display: block;
+    float: none;
+    width: 200px;
+    color: #FFFFFF;
+	float: left;
+	margin: 0px 0px 0px -48px;
+}
+
+#nav ul li:hover ul li a 
+{
+    color: #000000; /*first level drop down menu items default colour while hover*/
+    background: #C6C6C6; /*first level drop down menu items default colour while hover*/
+	width: 200px;
+}
+
+#nav ul li ul li a 
+{
+    color: #FFFFFF;
+    display: block;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#nav ul li ul li a:hover,
+#nav ul li ul li:hover a 
+/*first level drop down item selection styling*/
+{
+    color: #000000; /*colour while hover*/
+	background: #FFFFFF; /*colour while hover*/
+    text-decoration: none;
+    width: 200px;
+}*/
